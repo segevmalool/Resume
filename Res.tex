@@ -4,22 +4,13 @@
   left=1cm,
   right=1cm,
   top=1cm,
-  bottom=0cm,
+  bottom=2cm,
   paper=a4paper
 ]{geometry}
-\usepackage{multicol}
-\usepackage{scrextend}
 \usepackage{framed}
-\usepackage{xcolor}
-\usepackage{changepage}
 \usepackage{pgfornament}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage{hyperref}
-
-\hypersetup{
-  colorlinks=false
-}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 
 \definecolor{headercolor}{HTML}{000000}
 \definecolor{leftbarcolor}{HTML}{0d10aa}
@@ -27,49 +18,56 @@
 \renewcommand{\familydefault}{\sfdefault}
 
 \renewenvironment{leftbar}[1][\hsize]
-{%
+{
     \def\FrameCommand
-    {%
+    {
         {\color{leftbarcolor}\vrule width 3pt}%
         \hspace{0pt}%must no space.
         \fboxsep=\FrameSep\colorbox{white}%
-    }%
-    \MakeFramed{\hsize#1\advance\hsize-\width\FrameRestore}%
+    }
+    \MakeFramed{\hsize#1\advance\hsize-\width\FrameRestore}
 }
 {\endMakeFramed}
 
+\renewcommand\labelitemi{$\oplus$}
+
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
 \begin{document}
+
+\pagenumbering{arabic}
+
 \Huge\center Segev Malool \\
 \vspace{-0.5cm}
 \normalsize segevmalool@berkeley.edu \hfill (925) 255-3481 \\
 \vspace{0.4cm}\hrule\vspace{0.3cm}
-\renewcommand\labelitemi{$\succ$}
-\renewcommand\labelitemi{$\oplus$}
 \center\Large\textbf{Awards and Certifications}
+
 \begin{minipage}{\textwidth}\center\normalsize
   \vspace{0.3cm}  
   Ping Identity Excellence Award $|$ Capital One TechX Finalist $|$ UC Berkeley Fung Alumni Award \\
   \vspace{0.2cm}
   Ping Identity Certified Professional -- Ping Federate $|$ AWS Certified Solutions Architect $|$ CompTIA Security+
-  \vspace{0.2cm} 
+  \vspace{0.2cm}
 \end{minipage}
+
 \center\Large\textbf{Technical Skills}
 \begin{minipage}{\textwidth}\center\normalsize
-  \vspace{0.3cm}  
-  Java $|$ 
-  TypeScript $|$ 
+  \vspace{0.3cm}
+  Java $|$
+  JavaScript $|$
   Python $|$
   Reactive Programming $|$
-  RxJS $|$
-  Spring Framework $|$
-  FastAPI \\
+  Application Frameworks \\
   \vspace{0.3cm}
   Build Tooling $|$ 
   Quality Control $|$
   Automated Deployments $|$
   Cloud $|$ 
-  MicroServices\\
+  MicroApp Components\\
   \vspace{0.3cm}
+  TLS $|$
+  HTTPS $|$
   OAuth2 $|$ 
   OpenID Connect $|$ 
   SAML $|$
@@ -77,57 +75,144 @@
   Access Control
   \vspace{0.3cm}
 \end{minipage}
+
 \center\Large\textbf{Experience and Education}
 \vspace{0.2cm}\color{headercolor}
-\flushleft\noindent\large\textbf{Fannie Mae}\hfill\small{Jan 2022 -- Present $|$ Reston, VA $|$ Full Time}\color{black}
+
+\flushleft\noindent\large\textbf{Lively, Inc.}\hfill\small{
+  May 2022 -- Present $|$ San Francisco $|$ Full Time
+}\color{black}
+
 \begin{leftbar}
-  \normalsize\textbf{Full Stack Software Engineer, Multifamily Aquisitions}
+  \normalsize\textbf{Software Engineer}
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
-    \item Enabled modernization by developing features for multiple applications.
-    \item Drove adoption of enterprise patterns, resulting in savings of thousands of developer hours.
+    \item Enabled quality assurance for payment card data processing services (Visa DPS, Fiserv).
+    \item Drove adoption of secure software engineering practices (TLS).
+    \item Facilitated discussions around data engineering, test data
+      management, and automated QA.
+    \item Developed web application components, software libraries, job
+      scripts, and database migrations.
     }
   \end{itemize}
 \end{leftbar}
-\color{headercolor}
-\flushleft\noindent\large\textbf{Capital One}\hfill\small{Feb 2019 -- Jan 2022 $|$ McLean, VA $|$ Full Time}\color{black}
+
+\flushleft\noindent\large\textbf{Fannie Mae}\hfill\small{
+  Jan 2022 -- May 2022 $|$ Reston, VA $|$ Full Time
+}\color{black}
+
+\begin{leftbar}
+  \normalsize\textbf{Software Engineer}
+  \begin{itemize}
+    {\normalsize\setlength\itemindent{0.3cm}
+    \item Supported mortgage commitment and delivery by developing
+      features for multiple Java applications.
+    \item Maximized velocity by applying Spring Framework
+      integrations.
+    \item Developed data transformations using JPA and JAX.
+    \item Drove collaborative problem solving and adoption of
+      enterprise patterns.
+    }
+  \end{itemize}
+\end{leftbar}
+
+\flushleft\noindent\large\textbf{Capital One}\hfill\small{
+  Feb 2019 -- Jan 2022 $|$ McLean, VA $|$ Full Time
+}\color{black}
+
 \begin{leftbar}
   \normalsize\textbf{Developer Academy $\rightarrow$ Associate Software Engineer $\rightarrow$ Senior Software Engineer}
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
-    \item Developed and deployed full stack application components in Amazon Cloud (Python, Javascript).
-    \item Led an award winning deployment of PingFederate in Amazon Cloud.
-    \item Led an exploratory StrongKey FIDO2 Server (SKFS) deployment in Amazon Cloud.
-    \item Cut cost of delivery for Single Sign On infrastructure by over 70\%.
+    \item Supported data-driven business capabilities by developing
+      application components for Capital One Data Insights.
+    \item Led an award winning deployment of PingFederate in Amazon
+      Cloud.
+    \item Led an exploratory StrongKey FIDO2 Server (SKFS) deployment
+      in Amazon Cloud with SSO integrations.
+    \item Cut cost of delivery for Single Sign On infrastructure by
+      over 90\%.
     \item Provided integration support and on-call incident response.
-    \item Drove adoption of authentication best practices for over 1100 business applications.
-    \item Drove adoption of devops, source control, and AWS well-architected framework.
-    \item Facilitated teamwork and collaboration around key technical issues.
+    \item Drove adoption of authentication best practices for over
+      1100 business applications.
+    \item Drove adoption of devops, source control, and AWS
+      well-architected framework.
+    \item Facilitated teamwork and collaboration around key technical
+      issues.
     }
   \end{itemize}
 \end{leftbar}
-\color{headercolor}
-\flushleft\noindent\large\textbf{UC Berkeley}\hfill\small{Jun 2017 -- Jun 2018 $|$ Berkeley, CA $|$ Full Time}\color{black} 
+
+\pagebreak
+\Huge\center Segev Malool \\
+\vspace{-0.5cm}
+\normalsize segevmalool@berkeley.edu \hfill (925) 255-3481 \\
+\vspace{0.4cm}\hrule\vspace{0.3cm}
+
+\flushleft\noindent\large\textbf{Clover Health}\hfill\small{
+  Aug 2018 -- Jan 2019 $|$ San Francisco, CA $|$ Full Time
+}\color{black}
+
+\begin{leftbar}
+  \normalsize\textbf{Data Operations Coordinator}
+  \begin{itemize}
+    {\normalsize\setlength\itemindent{0.3cm}
+    \item Verified, investigated and resolved provider data
+      quality issues.
+    \item Exemplified operational excellence by actively participating
+      in data model review sessions.
+    \item Engaged technical team to promote collaboration and
+      cross-functional communication.
+    }
+  \end{itemize}
+\end{leftbar}
+
+\flushleft\noindent\large\textbf{UC Berkeley}\hfill\small{
+  Jun 2017 -- Jun 2018 $|$ Berkeley, CA $|$ Full Time
+}\color{black}
+
 \begin{leftbar}
   \normalsize\textbf{Master of Engineering, Industrial Engineering and Operations Research}
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
     \item Completed interdisciplinary team projects in business and engineering.
     \item Completed coursework in data science, probability, and optimization analytics.
-    \item Worked to improve detection of arrhythmias in electrocardiogram data.
+    \item Improved detection of arrhythmias in electrocardiogram data.
     }
   \end{itemize}
 \end{leftbar}
-\color{headercolor}
-\flushleft\noindent\large\textbf{UC Santa Barbara}\hfill\small{Jun 2014 -- Jun 2016 $|$ Santa Barbara, CA $|$ Full Time}\color{black}
+
+\flushleft\noindent\large\textbf{UC Santa Barbara}\hfill\small{
+  Jun 2014 -- Jun 2016 $|$ Santa Barbara, CA $|$ Full Time
+}\color{black}
+
 \begin{leftbar}
   \normalsize\textbf{Bachelor of Science, Statistical Science}
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
-    \item Completed core coursework in probability modeling, statistical data analysis, and experiment design.
-    \item Completed elective coursework in data mining, time series, formal languages, and graph/network theory.
+    \item Completed core coursework in probability modeling,
+      statistical data analysis, and experiment design.
+    \item Completed elective coursework in data mining, time series,
+      formal languages, and graph/network theory.
     }
   \end{itemize}
 \end{leftbar}
-\vfill\vphantom{1cm}
+
+\flushleft\noindent\large\textbf{City College of San Francisco}\hfill\small{
+  Jun 2012 -- Jun 2014 $|$ San Francisco, CA $|$ Full Time
+}\color{black}
+
+\begin{leftbar}
+  \normalsize\textbf{Associate, Mathematics}
+  \begin{itemize}
+    {\normalsize\setlength\itemindent{0.3cm}
+    \item Completed general education in science, language, and arts.
+    \item Tutored mathematics from arithmetic through multivariable
+      calculus for the CCSF Learning Assistance Center.
+    \item Planned and executed lecture events on behalf of the CCSF
+      Math Club.
+    }
+  \end{itemize}
+\end{leftbar}
+
 \end{document}
