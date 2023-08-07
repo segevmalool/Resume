@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  22 OCT 2022 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  7 AUG 2023 14:19
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **Res.tex
 (./Res.tex
@@ -409,20 +410,20 @@ File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
 (./Res.aux)
 \openout1 = `Res.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -431,17 +432,17 @@ LaTeX Font Info:    ... okay on input line 36.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
+* modes: includehead includefoot 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(28.45274pt, 759.6886pt, 56.9055pt)
+* v-part:(T,H,B)=(14.22636pt, 802.36774pt, 28.45274pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=759.6886pt
+* \textheight=735.36774pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-80.81725pt
-* \headheight=12.0pt
+* \topmargin=-58.04362pt
+* \headheight=28.45274pt
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
@@ -482,32 +483,48 @@ e
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 36.
+(lastpage)             ! on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 48.
+(Font)              <7> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 48.
+(Font)              <5> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 52.
+(Font)              <14.4> on input line 55.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 83.
+(Font)              <9> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 83.
+(Font)              <6> on input line 86.
 
-[1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package fancyhdr Warning: \headheight is too small (28.45274pt): 
+(fancyhdr)                Make it at least 30.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{30.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.54726pt}.
+
+[1{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 
 AED: lastpage setting LastPage
+
+Package fancyhdr Warning: \headheight is too small (28.45274pt): 
+(fancyhdr)                Make it at least 30.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{30.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.54726pt}.
+
 [2] (./Res.aux) ) 
 Here is how much of TeX's memory you used:
  12755 strings out of 478268
  264748 string characters out of 5846347
- 547856 words of memory out of 5000000
+ 549017 words of memory out of 5000000
  30751 multiletter control sequences out of 15000+600000
  474408 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,11n,118p,469b,214s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,11n,118p,469b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
@@ -515,7 +532,7 @@ cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy9.pfb>
-Output written on Res.pdf (2 pages, 73142 bytes).
+Output written on Res.pdf (2 pages, 73955 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream

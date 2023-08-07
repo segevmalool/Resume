@@ -3,9 +3,10 @@
 \usepackage[
   left=1cm,
   right=1cm,
-  top=1cm,
-  bottom=2cm,
-  paper=a4paper
+  top=0.5cm,
+  bottom=1cm,
+  paper=a4paper,
+  includeheadfoot
 ]{geometry}
 \usepackage{framed}
 \usepackage{pgfornament}
@@ -33,14 +34,16 @@
 
 \pagestyle{fancy}\fancyhf{}\fancyfoot[C]{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 
+\setlength{\headheight}{1cm}
+
+\fancyhead[L]{\normalsize segevmalool@berkeley.edu}
+\fancyhead[C]{\Huge Segev Malool}
+\fancyhead[R]{(925) 255-3481}
+
 \begin{document}
 
 \pagenumbering{arabic}
 
-\Huge\center Segev Malool \\
-\vspace{-0.5cm}
-\normalsize segevmalool@berkeley.edu \hfill (925) 255-3481 \\
-\vspace{0.4cm}\hrule\vspace{0.3cm}
 \center\Large\textbf{Awards and Certifications}
 
 \begin{minipage}{\textwidth}\center\normalsize
@@ -51,32 +54,32 @@
   \vspace{0.2cm}
 \end{minipage}
 
-\center\Large\textbf{Technical Skills}
+\vspace{0.3cm}\center\Large\textbf{Technical Skills}
+
 \begin{minipage}{\textwidth}\center\normalsize
   \vspace{0.3cm}
   Java $|$
   JavaScript $|$
   Python $|$
-  Reactive Programming $|$
-  Application Frameworks \\
+  Reactive and Event-Driven Programming \\
   \vspace{0.3cm}
   Build Tooling $|$ 
-  Quality Control $|$
+  Automated Quality Assurance $|$
   Automated Deployments $|$
   Cloud $|$ 
-  MicroApp Components\\
+  Software Architecture\\
   \vspace{0.3cm}
   TLS $|$
   HTTPS $|$
+  SOAP $|$
   OAuth2 $|$ 
   OpenID Connect $|$ 
   SAML $|$
   FIDO2 $|$ 
   Access Control
-  \vspace{0.3cm}
 \end{minipage}
 
-\center\Large\textbf{Experience and Education}
+\vspace{0.5cm}\center\Large\textbf{Experience}
 \vspace{0.2cm}\color{headercolor}
 
 \flushleft\noindent\large\textbf{Lively, Inc.}\hfill\small{
@@ -84,15 +87,15 @@
 }\color{black}
 
 \begin{leftbar}
-  \normalsize\textbf{Software Engineer}
+  \normalsize\textbf{Software Engineer} \hfill Platform and Card Services
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
-    \item Enabled quality assurance for payment card data processing services (Visa DPS, Fiserv).
-    \item Drove adoption of secure software engineering practices (TLS).
-    \item Facilitated discussions around data engineering, test data
-      management, and automated QA.
-    \item Developed web application components, software libraries, job
-      scripts, and database migrations.
+    \item Designed and implemented application security improvements (mTLS, SNI, Secrets Management, AWS IAM).
+    \item Demonstrated versatility by delivering product features across the technical stack (Typescript, Postgres).
+    \item Elevated security of debit card systems integrations (Visa DPS, Fiserv).
+    \item Drove operational excellence by collaborating with devops, security, and business managers.
+    \item Enhanced observability by leading a transition from Datadog to Splunk (SIEM).
+    \item Acquired specialized knowledge of Splunk, Docker, and Card Security, acted as SME in these areas.
     }
   \end{itemize}
 \end{leftbar}
@@ -102,16 +105,12 @@
 }\color{black}
 
 \begin{leftbar}
-  \normalsize\textbf{Software Engineer}
+  \normalsize\textbf{Software Engineer} \hfill Mortgage Commitment and Delivery
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
-    \item Supported mortgage commitment and delivery by developing
-      features for multiple Java applications.
-    \item Maximized velocity by applying Spring Framework
-      integrations.
-    \item Developed data transformations using JPA and JAX.
-    \item Drove collaborative problem solving and adoption of
-      enterprise patterns.
+    \item Fortified mortgage commitment and delivery by architecting secure features across multiple Java applications.
+    \item Established reliable and secure enterprise messaging by leveraging JPA, JAX, and Tibco EMS.
+    \item Elevated software delivery and fortified security posture by skillfully leveraging enterprise Gradle integrations.
     }
   \end{itemize}
 \end{leftbar}
@@ -121,40 +120,28 @@
 }\color{black}
 
 \begin{leftbar}
-  \normalsize\textbf{Developer Academy $\rightarrow$ Associate Software Engineer $\rightarrow$ Senior Software Engineer}
+  \normalsize\textbf{Software Engineer $\rightarrow$ Senior Software Engineer} \hfill Workforce Authentication and Machine Learning as a Service
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
-    \item Supported data-driven business capabilities by developing
-      application components for Capital One Data Insights.
-    \item Led an award winning deployment of PingFederate in Amazon
-      Cloud.
-    \item Led an exploratory StrongKey FIDO2 Server (SKFS) deployment
-      in Amazon Cloud with SSO integrations.
-    \item Cut cost of delivery for Single Sign On infrastructure by
-      over 90\%.
-    \item Provided integration support and on-call incident response.
-    \item Drove adoption of authentication best practices for over
-      1100 business applications.
-    \item Drove adoption of devops, source control, and AWS
+    \item Pioneered cutting-edge machine learning for Capital One's MLaaS, fortifying data confidentiality and integrity.
+    \item Orchestrated an award-winning deployment of PingFederate with robust enterprise integrations.
+    \item Spearheaded an exploratory StrongKey FIDO2 Server (SKFS) deployment for passwordless authentication.
+    \item Dramatically reduced cost by over 90\%, maintaining stringent security standards and seamless user experiences.
+    \item Provided expert integration support and on-call incident response.
+    \item Drove the widespread adoption of authentication best practices across 1100+ business applications.
+    \item Led the seamless implementation of devops, source control, and AWS
       well-architected framework.
-    \item Facilitated teamwork and collaboration around key technical
-      issues.
+    \item Fostered a collaborative environment to address key technical challenges effectively.
     }
   \end{itemize}
 \end{leftbar}
-
-\pagebreak
-\Huge\center Segev Malool \\
-\vspace{-0.5cm}
-\normalsize segevmalool@berkeley.edu \hfill (925) 255-3481 \\
-\vspace{0.4cm}\hrule\vspace{0.3cm}
 
 \flushleft\noindent\large\textbf{Clover Health}\hfill\small{
   Aug 2018 -- Jan 2019 $|$ San Francisco, CA $|$ Full Time
 }\color{black}
 
 \begin{leftbar}
-  \normalsize\textbf{Data Operations Coordinator}
+  \normalsize\textbf{Data Operations Coordinator} \hfill Provider Data
   \begin{itemize}
     {\normalsize\setlength\itemindent{0.3cm}
     \item Verified, investigated and resolved provider data
@@ -166,6 +153,8 @@
     }
   \end{itemize}
 \end{leftbar}
+
+\center\Large\textbf{Education}
 
 \flushleft\noindent\large\textbf{UC Berkeley}\hfill\small{
   Jun 2017 -- Jun 2018 $|$ Berkeley, CA $|$ Full Time
