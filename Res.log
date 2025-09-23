@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  7 AUG 2023 14:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.9)  23 SEP 2025 16:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,15 +485,15 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
 (lastpage)             ! on input line 43.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 51.
+(Font)              <7> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 51.
+(Font)              <5> on input line 50.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 55.
+(Font)              <14.4> on input line 54.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 86.
+(Font)              <9> on input line 106.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 86.
+(Font)              <6> on input line 106.
 
 
 Package fancyhdr Warning: \headheight is too small (28.45274pt): 
@@ -520,11 +520,11 @@ Package fancyhdr Warning: \headheight is too small (28.45274pt):
 Here is how much of TeX's memory you used:
  12755 strings out of 478268
  264748 string characters out of 5846347
- 549017 words of memory out of 5000000
+ 550017 words of memory out of 5000000
  30751 multiletter control sequences out of 15000+600000
  474408 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 115i,11n,118p,469b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 115i,11n,118p,469b,282s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmss10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmss17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/
@@ -532,7 +532,7 @@ cm/cmss9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy9.pfb>
-Output written on Res.pdf (2 pages, 73955 bytes).
+Output written on Res.pdf (2 pages, 72840 bytes).
 PDF statistics:
  44 PDF objects out of 1000 (max. 8388607)
  27 compressed objects within 1 object stream
